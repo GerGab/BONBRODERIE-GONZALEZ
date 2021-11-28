@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Favicon.jpeg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <title>Bon Broderie | Tu Pedido</title>
+</head>
+<body>
+    <header class="header">
+        <!--Banner seccion-->
+        <img class="banner" src="../images/Banners/Banner Categoria-ARMA.jpg" alt="Banner arma tu pedido">
+        <nav>
+            <!--Barra navegación-->
+            <ul>
+                <li> <a href="../index.html">Inicio</a> </li>
+                <li> <a href="../pages/quienesSomos.html">Quienes Somos</a> </li>
+                <li> <a href="../pages/cursos.html">Cursos</a> </li>
+                <li> <a href="../pages/shop.html">Shop</a> </li>
+                <li> <a href="../pages/tuPedido.html">Armá tu Pedido</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <!--Imagenes de referencia-->
+            <img src="../images/tu_pedido/HEADER Arma-Bastidor.jpg" alt="bastidores" class="flexItem bigImage">
+            <img src="../images/tu_pedido/HEADER Arma-Telas.jpg" alt="telas" class="flexItem bigImage">
+            <img src="../images/tu_pedido/HEADER Arma-Colores.jpg" alt="colores" class="flexItem bigImage">
+        </div>
+        <form action="/" method="post">
+            <!--Formulario DATOS y PEDIDO-->
+            <fieldset>
+                <h2 class="left">DATOS PERSONALES:</h2>
+                <div class="contactoGrid">
+                        <input class="nombre" id="nombre" type="text" placeholder="Ingrese su Nombre" required>
+                        <input class="apellido" id="apellido" type="text" placeholder="Ingrese su apellido" required>
+                        <input class="tel" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Telefono" required>
+                        <input class="dir" type="text" name="direccion" id="direccion" placeholder="Ingrese su Direccion" required>
+                        <input class="email" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                        <div class="retiro">
+                            <label for="retiro">Retiro</label>
+                        <input type="radio" name="ret_env" id="retiro" >
+                        </div>
+                        <div class="envio">
+                            <label for="envio">Envio</label>
+                            <input type="radio" name="ret_env" id="envio" checked> 
+                        </div>
+                         
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2 class="left">ARMA TU PEDIDO:</h2>
+                <div class="container">
+                    <div class="pedidoGrid">
+                        <select name="bastidor" id="bastidor" class="bastidor">
+                            <option value="bamboo">bamboo</option>
+                            <option value="flexi">flexi</option>
+                        </select>
+                        <select name="tela" id="tela" class="tela">
+                            <option value="lg">Lienzo gris</option>
+                            <option value="lc">Lienzo crudo</option>
+                            <option value="tr">Tussor rosa</option>
+                            <option value="tc">Tussor crudo</option>
+                        </select>
+                        <select name="tamaño" id="tamaño" class="tamano">
+                            <option value="S">12 cm</option>
+                            <option value="M">15 cm</option>
+                            <option value="L">17 cm</option>
+                        </select>
+                        <select name="color" id="color" class="colores">
+                            <option value="verano">Verano</option>
+                            <option value="otoño">Otoño</option>
+                            <option value="invierno">Invierno</option>
+                            <option value="primavera">Primavera</option>
+                        </select>
+                        <input class="pedir" type="submit" value="Pedir Presupuesto">
+                        <input class="limpiar" type="reset" value="Limpiar Campos"> 
+                    </div>
+                    <div class="containerVertical">
+                        <img class="imgFile" id="vistaPrevia" alt=""  />
+                        <label class="fileLabel" for="dis">Selecciona Archivo</label>
+                        <input class="file" type="file" name="diseno" id="dis" accept=".jpeg,.png,.pdf,.eps" onchange="document.getElementById('vistaPrevia').src = window.URL.createObjectURL(this.files[0])">
+                    </div>
+                </div>
+                
+                
+            </fieldset>
+        </form>
+        <div class="line"></div>
+    </section>
+    <footer class="footer">
+        <p>TODOS LOS DERECHOS RESERVADOS</p>
+        <div>
+            <h3>BON BRODERIE</h3>
+            <ul>
+                <!--Links mas importantes-->
+                <li> <a href="../pages/quienesSomos.html">QUIENES SOMOS</a> </li>
+                <li> <a href="../pages/cursos.html">CURSOS</a> </li>
+                <li> <a href="../pages/tuPedido.html">ARMÁ TU PEDIDO</a> </li>
+            </ul>
+        </div>
+        <div>
+            <h3>REDES SOCIALES</h3>
+            <ul>
+                <!--A incorporar link mas adelante-->
+                <li><a href="https://www.instagram.com/bon.broderie/"> 
+                        <i class="fab fa-instagram"></i> INSTAGRAM</a></li>
+                <li><a href="https://www.youtube.com/channel/UC_wtsz-dV-uBTkiTQd0la-w/featured"><i class="fab fa-youtube"></i> YOUTUBE</li>
+                <li><i class="fab fa-whatsapp"></i> WHATSAPP</li></a> 
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
