@@ -13,14 +13,35 @@
     background-color:  rgb(229, 197, 185);
     position: relative;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 3%;
     
 }
 
 .banner {
     width: 100%;
-    
+}
+
+.navbar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.navModificado {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(229, 197, 185);
+}
+
+.togglerMod {
+    width: 1rem;
+    height: 1rem;
+}
+
+.navUlMod{
+    width: 80%;
+    justify-content: center;
 }
 
 .header nav ul li{
@@ -29,6 +50,12 @@
     align-items: center;
     display: inline-block;
 
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
 }
 
 a:link, a:visited,  a:hover, a:active{
@@ -116,18 +143,24 @@ iframe{
 }
 
 /*Ajuste de tablas (posiblemente a retirar a futuro)*/
-.table{
+.tabla{
     width: 60%;
     margin: 50px auto 50px auto;
     background-color: rgb(229, 197, 185);
     padding: 3vh 0;
 }
 
-.table table{
+.tabla table{
     height: 60%;
     width: 80%;
     margin: 0 auto 0 auto;
     text-align: center;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .center{
@@ -348,11 +381,11 @@ select{
     }
 
     /*Cursos tabla*/
-    .table{
+    .tabla{
         width: 80%;
     }
     
-    .table table{
+    .tabla table{
         height: 60%;
         width: 80%;
         margin: 0 auto 0 auto;
@@ -402,24 +435,11 @@ select{
 }
 
 @media (max-width: 760px) {
-    .footer p {
-        font-size: 0.8rem;
-        padding-top: 5vh;
-    }
-    .footer div{
-        width: 130px;
-        height: 160px;
-        margin: 5% 3%;
-        text-align: center;
-    }
+   
 
-    .footer div h3{
-        font-size: 1rem;
-    }
-
-    .footer div ul li{
-        text-align: center;
-        font-size: 0.6rem;
+    .navUlMod{
+        width: auto;
+        justify-content: center;
     }
 
     .bigImage {
@@ -440,6 +460,26 @@ select{
     .imgFile{
         width: 200px;
         height: 200px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+        padding-top: 5vh;
+    }
+    .footer div{
+        width: 130px;
+        height: 160px;
+        margin: 5% 3%;
+        text-align: center;
+    }
+
+    .footer div h3{
+        font-size: 1rem;
+    }
+
+    .footer div ul li{
+        text-align: center;
+        font-size: 0.6rem;
     }
 
 }
