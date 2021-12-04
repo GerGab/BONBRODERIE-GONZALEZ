@@ -21,7 +21,7 @@
     <header class="header">
         <!--Banner seccion-->
         <img class="banner" src="../images/Banners/Banner Categoria-ARMA.jpg" alt="Banner arma tu pedido">
-        <nav class="navbar navbar-expand-md navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid navModificado">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon togglerMod"></span>
@@ -29,7 +29,7 @@
               <div class="collapse navbar-collapse navModificado " id="navbarNav">
                 <ul class="navbar-nav navUlMod">
                   <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item"> 
                     <a class="nav-link" href="../pages/quienesSomos.html">Quienes Somos</a>
@@ -49,12 +49,33 @@
           </nav>
     </header>
     <section>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/tu_pedido/HEADER Arma-Bastidor.jpg" class="d-block w-100 slideImage" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/tu_pedido/HEADER Arma-Telas.jpg" class="d-block w-100 slideImage" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/tu_pedido/HEADER Arma-Colores.jpg" class="d-block w-100 slideImage" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <!--
         <div class="container">
-            <!--Imagenes de referencia-->
             <img src="../images/tu_pedido/HEADER Arma-Bastidor.jpg" alt="bastidores" class="flexItem bigImage">
             <img src="../images/tu_pedido/HEADER Arma-Telas.jpg" alt="telas" class="flexItem bigImage">
             <img src="../images/tu_pedido/HEADER Arma-Colores.jpg" alt="colores" class="flexItem bigImage">
-        </div>
+        </div>-->
         <form action="/" method="post">
             <!--Formulario DATOS y PEDIDO-->
             <fieldset>
@@ -78,7 +99,7 @@
             </fieldset>
             <fieldset>
                 <h2 class="left">ARMA TU PEDIDO:</h2>
-                <div class="container">
+                <div class="contenedor">
                     <div class="pedidoGrid">
                         <select name="bastidor" id="bastidor" class="bastidor">
                             <option value="bamboo">bamboo</option>
