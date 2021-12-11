@@ -32,3 +32,10 @@ iframe{
         transform: scale(1.1);
     }
 }
+
+.carousel {
+
+    &Small{
+        display:none;
+    }
+}

@@ -21,9 +21,14 @@
     .contenedorCentrado{
         flex-direction: column;
         align-content: center;
+        justify-content: center;
     }
 
-    /*Cursos tabla*/
+    /*Cursos y tabla*/
+    .cursoCard {
+        width: 225px;
+    }
+
     .tabla{
         width: 80%;
 
@@ -190,6 +195,18 @@
         }
         h3{
             font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .carousel{
+
+        &Small{
+            display:block;
+        }
+        &Large{
+            display:none;
         }
     }
 }

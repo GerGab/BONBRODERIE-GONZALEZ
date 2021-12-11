@@ -29,13 +29,13 @@
               <div class="collapse navbar-collapse navModificado " id="navbarNav">
                 <ul class="navbar-nav navUlMod">
                   <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item"> 
                     <a class="nav-link" href="../pages/quienesSomos.html">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                    <a class="nav-link active" href="../pages/cursos.html">Cursos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="../pages/shop.html">Shop</a>
@@ -52,19 +52,40 @@
         <!-- Tipos de Cursos (falta completar parrafos)-->
         <div class="contenedor">
             <div class="containerVertical flexItem">
-            <img src="../images/Cursos/Nombres.jpeg" alt="Letras" class="cursoImg">
-            <h2>Curso bordado Letras</h2>
-            <p> En este curso aprenderas...</p>
+                <img src="../images/Cursos/Letras.JPG" alt="Letras" class="cursoImg">
+                <h2>Curso bordado Letras</h2>
+                <p class="resaltar">
+                    <a   data-bs-toggle="collapse" href="#collapseLetras" role="button" aria-expanded="false" aria-controls="collapseLetras">
+                        En este curso aprenderas...
+                    </a>
+                </p>
+                <div class="collapse card cursoCard" id="collapseLetras">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
             </div>
             <div class="containerVertical flexItem">
                 <img src="../images/Cursos/Nombres.jpeg" alt="Letras" class="cursoImg">
                 <h2>Curso bordado Nombres</h2>
-                <p>En este curso aprenderas...</p>
+                <p class="resaltar">
+                    <a  data-bs-toggle="collapse" href="#collapseNombres" role="button" aria-expanded="false" aria-controls="collapseNombres">
+                        En este curso aprenderas...
+                    </a>
+                </p>
+                <div class="collapse card cursoCard" id="collapseNombres">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
             </div>
             <div class="containerVertical flexItem">
                 <img src="../images/Cursos/Flores.jpeg" alt="Letras" class="cursoImg">
                 <h2>Curso bordado Flores</h2>
-                <p>En este curso aprenderas...</p>
+                <p class="resaltar">
+                    <a  data-bs-toggle="collapse" href="#collapseFlores" role="button" aria-expanded="false" aria-controls="collapseFlores">
+                        En este curso aprenderas...
+                    </a>
+                </p>
+                <div class="collapse card cursoCard" id="collapseFlores">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
             </div>
         </div>
         <!-- Tabla de Horarios-->
@@ -105,7 +126,7 @@
         </div> 
         <div>
             <h2> ¿SABÍAS QUE PODES HACER TU PEDIDO COMO MÁS TE GUSTE?</h2>
-            <a href="./tuPedido.html" class="center"><p>Armar mi pedido!</p></a> 
+            <a href="./tuPedido.html" class="center"><p class="resaltar" >Armar mi pedido!</p></a> 
         </div>
         <div class="line"></div>
 

@@ -20,3 +20,10 @@ h2 {
     font-style: italic;
     max-width: 60%;
 }
+
+.resaltar{
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
