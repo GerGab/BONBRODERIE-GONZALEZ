@@ -73,23 +73,18 @@ h2 {
 .resaltar:hover {
   text-decoration: underline; }
 
-.contenedor {
+.contenedor, .contenedorCentrado, .containerVertical {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start; }
 
 .contenedorCentrado {
-  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center; }
 
 .containerVertical {
-  display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center; }
 
 .flexItem {
@@ -432,7 +427,7 @@ ol, ul {
   .imgFile {
     width: 200px;
     height: 200px; }
-  .contenedor {
+  .contenedor, .contenedorCentrado, .containerVertical {
     flex-direction: column;
     align-content: center; }
   /*Seccion Shop*/

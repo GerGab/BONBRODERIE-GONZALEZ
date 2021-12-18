@@ -1,9 +1,13 @@
+@mixin imagenStandard ($anchoMax) {
+    max-width: $anchoMax;
+}
+
 .miImg {
-    max-width: 250px;
+    @include imagenStandard(250px);
 }
 
 .cursoImg {
-    max-width: 300px;
+    @include imagenStandard(300px);
 }
 
 .imgFloat {

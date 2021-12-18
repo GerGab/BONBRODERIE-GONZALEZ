@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color:  rgb(229, 197, 185);
+    background-color:$webColor;
     position: relative;
     text-align: center;
     font-size: 1rem;
@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: rgb(229, 197, 185);
+    background-color: $webColor;
 }
 
 .togglerMod {

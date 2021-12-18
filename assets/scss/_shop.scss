@@ -1,8 +1,8 @@
 .shopBand {
     margin: auto;
     width: 70vw;
-    background-color: rgb(229, 197, 185);
-    background: linear-gradient(to bottom, white 0%, white 50% , rgb(229, 197, 185) 50%,rgb(229, 197, 185) 100% )
+    background-color: $webColor;
+    background: linear-gradient(to bottom, white 0%, white 50% , $webColor 50%, $webColor 100% );
 }
 
 .insumosGrid {
