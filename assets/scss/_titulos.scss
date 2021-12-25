@@ -19,8 +19,13 @@ h2 {
     letter-spacing: 0.5px;
     font-style: italic;
     max-width: 60%;
+
 }
 
+.cursosTexto{
+    @extend .noTitle;
+    font-size :1rem;
+}
 .resaltar{
 
     &:hover{
